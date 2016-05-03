@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+
+    "name": "Jquery in console",
+    "description": "Use Jquery in Chrome console",
+    "version": "0.1",
+
+    "browser_action": {
+        "default_icon": "app/image/off.png",
+        "default_title": "icon"
+    },
+    "permissions": [
+        "tabs", "http://*/*", "https://*/*"
+    ],
+    "web_accessible_resources": [
+      "jquery.js"
+    ],
+    "icons": {
+      "32": "app/image/on.png",
+      "32": "app/image/off.png",
+      "128": "app/image/icon-128.png"
+    },
+    "background": {
+       "scripts": ["app/script/background.js"]
+    }
+}
